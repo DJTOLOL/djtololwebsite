@@ -1,0 +1,326 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px black solid;
+  /*border: 1px black solid; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+}
+
+body > div {
+  width: 100%;
+}
+#section1{
+  background-image: url("section1background.jpg");
+  background-size: cover;
+  
+  
+}
+
+#section1Header{
+  display: flex;
+  width: 100%;
+  padding: 5rem 0rem;
+  justify-content: space-between;
+  font-family: "Fira Code";
+  color: #FBF7BA;
+  
+}
+
+#JOB{
+  margin-left: 10%;
+}
+
+#BLURP{
+  margin-right: 10%;
+}
+
+#section1Title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 6rem;
+  color: #FBF7BA;
+  
+}
+
+#DJ{
+  font-family: "Kodchasan";
+}
+
+#TOLOL{
+  font-family: "Ballet";
+}
+
+#section1ContactMe{
+  display: flex;
+  padding: 4rem 0rem;
+  justify-content: flex-end;
+}
+
+#section1Button{
+  color: white;
+  padding: 1rem 2rem;
+  font-family: "Fira Code";
+  margin-right: 10%;
+  background-color: #1b0a02;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+#section2{
+  
+  background-color:#dcd5cf;
+  padding: 5rem 5rem;
+  justify-items: center;
+  
+}
+
+#section2Header{
+  justify-content: center;
+  padding: 2rem 0rem;
+  font-family: "Kodchasan";
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+#section2Content{
+  display:flex;
+  font-family: "Fira Code";
+  gap: 1.5rem;
+  max-width: 40rem;
+}
+
+#contentText{
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: justify;
+}
+
+#contentImage{
+  width: 16rem;
+  aspect-ratio: 1/1.25;
+  background: url("section2image.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+#section3{
+  background: url("section3background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 35rem;
+  z-index: -2; 
+}
+
+#container3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%; 
+}
+
+#container3Image{
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+}
+
+#container3Image > img{
+  max-width: 100%;
+  position:relative;
+  top: -40%;
+  z-index: -1; 
+}
+
+#container3Header{
+  font-family: "Kodchasan";
+  font-size: 4rem;
+  color: #fbf7ba;
+  margin-right: 20rem; 
+  padding-top: 4rem;
+}
+
+#container3Footer{
+  font-family: "Ballet";
+  font-size: 5rem;
+  color: #fbf7ba;
+  margin-left: 20rem;  
+}
+
+#section4{
+  width: 100%;
+  height: 50rem;
+  background-color:#dcd5cf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title4{
+  height: 10rem;
+  padding: 4rem 2rem 0rem 0rem;
+}
+
+#mainTitle4{
+  font-family: "Kodchasan";
+  font-size: 2.5rem;
+}
+
+#subtitle4{
+  font-family: "Kodchasan";
+  font-size: 1.5rem;
+}
+
+#profileContainer{
+  width: 80%;
+  height: 35rem;
+  background-color: white;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  
+}
+
+#imageContainer4{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#imageContainer4 > img{
+  width: 32rem;
+  display: block;
+  
+}
+
+#videos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.35rem;
+  padding-top: 2.5rem;
+  
+}
+iframe{
+  aspect-ratio: 16/9;
+  width: 40%;
+  height: auto;
+}
+
+#section5{
+  background-color: #dcd5cf;
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+
+#container5{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+#textContainer5{
+  width:50%;
+  color:#1b0a02;
+  letter-spacing: 0.3rem;
+  padding-left: 6rem;
+  padding-top: 6rem;
+}
+
+#title5{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#titleDepan{
+  font-family: "Kodchasan";
+  font-size: 4rem;
+}
+
+#titleBelakang{
+  font-family: "Ballet";
+  font-size: 6rem;
+}
+
+#body5{
+  display: flex;
+  flex-direction: column;
+  font-family: "Fira Code";
+  font-size: 1.1rem;
+  gap: 1.2rem;
+  
+}
+
+#body5 > button{
+  background-color: #1b0a02;
+  width: 14rem;
+  height: 4rem;
+  letter-spacing: 0.2rem;
+
+}
+
+a { 
+  color:white;
+  text-decoration: none;
+  
+} 
+
+a:visited { 
+  text-decoration: none; 
+  color:white; 
+}
+
+a:hover { 
+  text-decoration: none; 
+  color:white; 
+}
+
+a:focus { 
+  text-decoration: none; 
+  color:white; 
+}
+
+a:hover, a:active { 
+  text-decoration: none; 
+  color:white 
+}
+
+
+
+#imageContainer5{
+  width: 50%;
+  background-image: url("section4background.jpg");
+  background-size: cover;
+  background-position: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#imageContainer5 > img{
+  
+  aspect-ratio: 3/4;
+  height: 25rem;
+}
