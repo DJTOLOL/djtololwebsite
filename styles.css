@@ -278,7 +278,7 @@ body > div {
   #imageContainer4 > img{
     width: clamp(12rem, 50vw, 25rem);
     display: block;
-    
+    padding-top: 1rem;
   }
 }
 
@@ -303,23 +303,23 @@ iframe{
     justify-content: center;
     align-items: center;
     gap: 0.35rem;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
+    
     
   }
   iframe{
     aspect-ratio: 16/9;
-    width: clamp(12rem, 50vw, 20rem);
+    width: clamp(8rem, 50vw, 25rem);
     height: auto;
   }
   #profileContainer{
     width: 80%;
-    height: clamp(35rem, 120vw, 55rem);
+    height: clamp(35rem, 120vw, 60rem);
     background-color: white;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    padding-top: clamp(2rem, 3vw, 4rem);
-    padding-bottom: clamp(2rem, 3vw, 4rem) ;
+    padding-top: clamp(1rem, 2vw, 4rem);
     padding-left: 1rem;
     padding-right: 1rem;
     
@@ -327,7 +327,7 @@ iframe{
   }
   #section4{
     width: 100%;
-    height: clamp(40rem, 180vw, 60rem);
+    height: clamp(40rem, 180vw, 70rem);
     background-color:#dcd5cf;
     display: flex;
     flex-direction: column;
