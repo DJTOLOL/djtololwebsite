@@ -25,6 +25,8 @@ body > div {
   background-size: cover;
   
   
+  
+  
 }
 
 #section1Header{
@@ -33,6 +35,7 @@ body > div {
   padding: 5rem 0rem;
   justify-content: space-between;
   font-family: "Fira Code";
+  font-size: clamp(0.5rem, 1vw, 1rem);
   color: #FBF7BA;
   
 }
@@ -49,7 +52,7 @@ body > div {
   display: flex;
   width: 100%;
   justify-content: center;
-  font-size: 6rem;
+  font-size: clamp(2rem, 4vw ,6rem);
   color: #FBF7BA;
   
 }
@@ -66,23 +69,40 @@ body > div {
   display: flex;
   padding: 4rem 0rem;
   justify-content: flex-end;
+  
 }
 
 #section1Button{
   color: white;
-  padding: 1rem 2rem;
+  
+  padding-top: clamp(0.3rem, 1vw, 1rem);
+  padding-right: clamp(0.3rem, 1vw, 2rem) ;
+  padding-bottom: clamp(0.3rem, 1vw, 1rem) ;
+  padding-left: clamp(0.3rem, 1vw, 2rem) ;
   font-family: "Fira Code";
+  font-size: clamp(0.3rem, 1vw, 1rem);
   margin-right: 10%;
   background-color: #1b0a02;
-  letter-spacing: 0.2rem;
+  letter-spacing: clamp(0.1rem,0.5vw,0.2rem);
   cursor: pointer;
 }
 
 #section2{
   
   background-color:#dcd5cf;
-  padding: 5rem 5rem;
+  
+  padding-top: clamp(1rem, 4vw, 5rem);
+  padding-left: clamp(1rem, 4vw, 5rem);
+  padding-bottom: clamp(1rem, 4vw, 5rem);
+  padding-right: clamp(1rem, 4vw, 5rem);
+
   justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
   
 }
 
@@ -90,8 +110,8 @@ body > div {
   justify-content: center;
   padding: 2rem 0rem;
   font-family: "Kodchasan";
-  font-size: 4rem;
-  letter-spacing: 0.5rem;
+  font-size: clamp(0.1rem, 0.2rem + 2vw, 4rem);
+  letter-spacing: clamp(0.1rem, 0.1rem + 1vw,0.5rem);
 }
 
 #section2Content{
@@ -102,15 +122,30 @@ body > div {
 }
 
 #contentText{
-  width: 24rem;
+  max-width: 24rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   text-align: justify;
+  align-items: center;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  padding: 0rem 1rem;
+  
+}
+
+@media only screen and (max-width: 750px){
+  #section2Content{
+    display:flex;
+    flex-direction: column;
+    font-family: "Fira Code";
+    gap: 1.5rem;
+    max-width: 40rem;
+    align-items: center;
+  }
 }
 
 #contentImage{
-  width: 16rem;
+  width: clamp(1rem, 20vw, 16rem);
   aspect-ratio: 1/1.25;
   background: url("section2image.jpg");
   background-size:cover;
@@ -122,22 +157,23 @@ body > div {
   background: url("section3background.jpg");
   background-size: cover;
   width: 100%;
-  height: 35rem;
-  z-index: -2; 
+  height: clamp(15rem, 25vw, 35rem);
+   
 }
 
 #container3{
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
+  
+  justify-content: center;
   width: 100%;
   height: 100%; 
 }
 
 #container3Image{
-  width: 12rem;
-  height: 12rem;
+  width: clamp(4rem, 8vw, 12rem);
+  height: clamp(4rem, 8vw, 12rem);
   overflow: hidden;
 }
 
@@ -145,22 +181,22 @@ body > div {
   max-width: 100%;
   position:relative;
   top: -40%;
-  z-index: -1; 
+  
 }
 
 #container3Header{
   font-family: "Kodchasan";
-  font-size: 4rem;
+  font-size: clamp(1rem, 3vw, 4rem);
   color: #fbf7ba;
-  margin-right: 20rem; 
-  padding-top: 4rem;
+  margin-right: clamp(9rem, 11vw, 20rem); 
+  padding-top: clamp(1rem, 1rem + 2vw, 4rem);
 }
 
 #container3Footer{
   font-family: "Ballet";
-  font-size: 5rem;
+  font-size: clamp(1.5rem, 4vw, 4rem);
   color: #fbf7ba;
-  margin-left: 20rem;  
+  margin-left: clamp(9rem, 11vw, 20rem);  
 }
 
 #section4{
@@ -170,21 +206,40 @@ body > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 #title4{
   height: 10rem;
-  padding: 4rem 2rem 0rem 0rem;
+  padding: 0rem 4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 0.3rem;
+}
+
+@media only screen and (max-width: 1308px){
+  #title4{
+    height: 10rem;
+    padding-top: 0rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 }
 
 #mainTitle4{
   font-family: "Kodchasan";
-  font-size: 2.5rem;
+  font-size: clamp(0.5rem, 3vw,2.5rem);
 }
 
 #subtitle4{
   font-family: "Kodchasan";
-  font-size: 1.5rem;
+  font-size: clamp(0.25rem,3vw,1.5rem);
 }
 
 #profileContainer{
@@ -201,13 +256,30 @@ body > div {
 #imageContainer4{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  
   
 }
 
 #imageContainer4 > img{
-  width: 32rem;
+  width: 30rem;
   display: block;
   
+}
+
+@media only screen and (max-width: 1308px){
+  #imageContainer4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  #imageContainer4 > img{
+    width: clamp(12rem, 50vw, 25rem);
+    display: block;
+    
+  }
 }
 
 #videos{
@@ -220,13 +292,53 @@ body > div {
 }
 iframe{
   aspect-ratio: 16/9;
-  width: 40%;
+  width: auto;
   height: auto;
+}
+
+@media only screen and (max-width: 1308px){
+  #videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35rem;
+    padding-top: 2.5rem;
+    
+  }
+  iframe{
+    aspect-ratio: 16/9;
+    width: clamp(12rem, 65vw, 32rem);
+    height: auto;
+  }
+  #profileContainer{
+    width: 80%;
+    height: clamp(35rem, 150vw, 80rem);
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: clamp(2rem, 2vw, 4rem);
+    padding-bottom: clamp(2rem, 2vw, 4rem) ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+  }
+  #section4{
+    width: 100%;
+    height: clamp(40rem, 180vw, 100rem);
+    background-color:#dcd5cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 }
 
 #section5{
   background-color: #dcd5cf;
-  height: 50rem;
+  height: clamp(12rem, 40vw, 50rem);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -242,9 +354,9 @@ iframe{
 #textContainer5{
   width:50%;
   color:#1b0a02;
-  letter-spacing: 0.3rem;
-  padding-left: 6rem;
-  padding-top: 6rem;
+  letter-spacing: clamp(0.05rem, 0.2vw, 0.3rem);
+  padding-left: clamp(0rem, 5vw, 6rem);
+  padding-top: clamp(1rem, 5vw, 6rem);
 }
 
 #title5{
@@ -255,28 +367,30 @@ iframe{
 
 #titleDepan{
   font-family: "Kodchasan";
-  font-size: 4rem;
+  font-size: clamp(0.5rem, 3vw, 4rem);
 }
 
 #titleBelakang{
   font-family: "Ballet";
-  font-size: 6rem;
+  font-size: clamp(0.8rem, 5vw, 6rem);
 }
 
 #body5{
   display: flex;
   flex-direction: column;
   font-family: "Fira Code";
-  font-size: 1.1rem;
-  gap: 1.2rem;
+  font-size: clamp(0.3rem, 1vw, 1.1rem);
+  gap: clamp(0.3rem, 0.5vw, 1.2rem);
   
 }
 
 #body5 > button{
   background-color: #1b0a02;
-  width: 14rem;
-  height: 4rem;
-  letter-spacing: 0.2rem;
+  width: clamp(3rem, 11vw, 12rem);
+  height: clamp(1rem, 4vw, 4rem);
+  letter-spacing: clamp(0.1, 1vw, 0.2rem);
+  font-size:clamp(0.3rem, 0.8vw, 1.1rem) ;
+  
 
 }
 
@@ -316,11 +430,12 @@ a:hover, a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
 }
 
 #imageContainer5 > img{
   
   aspect-ratio: 3/4;
-  height: 25rem;
+  height: clamp(5rem, 20vw, 25rem);
 }
